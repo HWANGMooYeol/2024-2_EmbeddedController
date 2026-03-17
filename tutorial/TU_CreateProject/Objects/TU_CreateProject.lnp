@@ -1,0 +1,10 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\tu-createproject-main.o"
+".\objects\ecpinnames.o"
+".\objects\ecstm32_simple.o"
+".\objects\startup_stm32f411xe.o"
+".\objects\system_stm32f4xx.o"
+--strict --scatter ".\Objects\TU_CreateProject.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\TU_CreateProject.map" -o .\Objects\TU_CreateProject.axf

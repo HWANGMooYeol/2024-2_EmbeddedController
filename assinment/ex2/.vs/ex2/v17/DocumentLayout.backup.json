@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HWANG\\source\\repos\\EC\\ex2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15214912-120D-4520-8B12-B0CB30CF9E91}|ex2\\ex2.vcxproj|C:\\Users\\HWANG\\source\\repos\\EC\\ex2\\ex2\\ex2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{15214912-120D-4520-8B12-B0CB30CF9E91}|ex2\\ex2.vcxproj|solutionrelative:ex2\\ex2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ex2.cpp",
+              "DocumentMoniker": "C:\\Users\\HWANG\\source\\repos\\EC\\ex2\\ex2\\ex2.cpp",
+              "RelativeDocumentMoniker": "ex2\\ex2.cpp",
+              "ToolTip": "C:\\Users\\HWANG\\source\\repos\\EC\\ex2\\ex2\\ex2.cpp",
+              "RelativeToolTip": "ex2\\ex2.cpp",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-27T09:31:49.434Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
