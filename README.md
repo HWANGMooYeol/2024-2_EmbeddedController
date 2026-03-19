@@ -32,13 +32,13 @@ Additionally, the project includes a **monitoring pad** that provides supervisor
 
 The smart safety helmet, combined with a centralized monitoring system, represents an innovative solution that enhances both individual safety and team oversight across various applications, including industrial worksites, construction zones, and hazardous environments, demonstrating the effective integration of MCU technology with advanced sensors and supervisory tools to address real-world safety challenges.
 
-![img](C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/2.png)
+![img](./img/2.png)
 
 ​																						Fig 1. Project overview
 
 
 
-![img](C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/1.jpg)
+![img](./img/1.jpg)
 
 ​																						Fig 2. Project overview demo
 
@@ -201,7 +201,7 @@ FUNCTION
 
 
 
-![img](C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/cir1.png)
+![img](./img/cir1.png)
 
 ​																				Fig 3. Helmet System circuit diagram 
 
@@ -209,7 +209,7 @@ FUNCTION
 
 
 
-![img](C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/cir2.png)
+![img](./img/cir2.png)
 
 ​																				Fig 4. Monitoring System circuit diagram 
 
@@ -221,19 +221,19 @@ FUNCTION
 
 FLAGS
 
-![Flags](C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/3.png)
+![Flags](./img/3.png)
 
 
 
 FLOW CHART for HELMET
 
-<img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/fc1.png" alt="FLOW CHART" style="zoom:100%;" />
+<img src="./img/fc1.png" alt="FLOW CHART" style="zoom:100%;" />
 
 
 
 FLOW CHART for Monitoring
 
-<img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/fc2.png" alt="FLOW CHART" style="zoom:70%;" />
+<img src="./img/fc2.png" alt="FLOW CHART" style="zoom:70%;" />
 
 
 
@@ -823,50 +823,50 @@ Experiment images and results
 >
 >Measuring values of the helmet
 >
->![values](C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/values.png)
+>![values](./img/values.png)
 >
 >------
 >
 >**Helmet Auto sizing**
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/pressuresener.png" alt="result" style="zoom:50%;" />
+><img src="./img/pressuresener.png" alt="result" style="zoom:50%;" />
 >
 >1. motor rotate
 >
->![temp](C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/motor_start_value.png)
+>![temp](./img/motor_start_value.png)
 >
 >When top Pressure sensors detect the pressure, 'motor start value' changes to '4095' which is used as a thresholding value to rotate the motor clockwise. We can read the value by reading  JADC_CH4 register.
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/size1.png" alt="result" style="zoom:50%;" />
+><img src="./img/size1.png" alt="result" style="zoom:50%;" />
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/size1-1.png" alt="result" style="zoom:41%;" />
+><img src="./img/size1-1.png" alt="result" style="zoom:41%;" />
 >
 >2. motor stop
 >
->![temp](C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/motor_stop_value.png)
+>![temp](./img/motor_stop_value.png)
 >
 >When rear Pressure sensors detect the pressure, 'motor stop value' changes to '4095' which is used as a thresholding value to stop the stepper motor. We can read the value by reading  ADC register.
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/sizestop.png" alt="result" style="zoom:90%;" />
+><img src="./img/sizestop.png" alt="result" style="zoom:90%;" />
 >
 >3. motor reverse
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/chin.png" alt="result" style="zoom:40%;">
+><img src="./img/chin.png" alt="result" style="zoom:40%;">
 >
->![temp](C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/helmet_off.png)
+>![temp](./img/helmet_off.png)
 >
 >The Button on the chin strap is for reversing the motor. The button is connected to PC_13 pin and it triggers 'EXTI15_10_IRQHandler '. When the interrupt is pending the  'motor_reverse' value changes to 1 and it makes the stepper motor to rotate 3000 steps counterclockwise.
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/size2-1.png" alt="result" style="zoom:80%;" />
+><img src="./img/size2-1.png" alt="result" style="zoom:80%;" />
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/size2-2.png" alt="result" style="zoom:80%;" />
+><img src="./img/size2-2.png" alt="result" style="zoom:80%;" />
 >
 >
 >------
 >
 >**Body temperature detection**
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/tempsensor.png" alt="result" style="zoom:50%;" />
+><img src="./img/tempsensor.png" alt="result" style="zoom:50%;" />
 >
 >
 >
@@ -875,26 +875,26 @@ Experiment images and results
 >
 >2. High Temperature Alert
 >
->![temp](C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/temp_value1.png)
+>![temp](./img/temp_value1.png)
 >
 >When the value exceeds the threshold(600) for high temperature, the system triggers an alert, red led on.
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/red.jpg" alt="result" style="zoom:30%;" />
+><img src="./img/red.jpg" alt="result" style="zoom:30%;" />
 >
 >3. Low Temperature Alert
 >
->![temp](C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/temp_value2.png)
+>![temp](./img/temp_value2.png)
 >
 >When the value is lower then threshold value(300) for low temperature, the system triggers an alert, blue led on.
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/blue.jpg" alt="result" style="zoom:30%;" />
+><img src="./img/blue.jpg" alt="result" style="zoom:30%;" />
 >
 >
 >------
 >
 >**Rear detection**
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/ultrasonic.png" alt="result" style="zoom:75%;" />
+><img src="./img/ultrasonic.png" alt="result" style="zoom:75%;" />
 >
 >1. Sensor Trigger
 >
@@ -902,19 +902,19 @@ Experiment images and results
 >
 >2. Rear Object Alert
 >
->![temp](C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/distance.png)
+>![temp](./img/distance.png)
 >
 >When object is detected with in 15 cm, yellow led turns on.
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/yellow.jpg" alt="result" style="zoom:30%;" />
+><img src="./img/yellow.jpg" alt="result" style="zoom:30%;" />
 >
->​											<img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/yellow_off.png" alt="result" style="zoom:33%;" /><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/yellow_on.png" alt="result" style="zoom:30%;" />
+>​											<img src="./img/yellow_off.png" alt="result" style="zoom:33%;" /><img src=".img/yellow_on.png" alt="result" style="zoom:30%;" />
 >
 >------
 >
 >**Toxic gas detection**
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/gassensor.png" alt="result" style="zoom:60%;" />
+><img src="./img/gassensor.png" alt="result" style="zoom:60%;" />
 >
 >1. Sensor Activation
 >
@@ -922,17 +922,17 @@ Experiment images and results
 >
 >2. Alert Mechanism
 >
->![temp](C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/gas_value.png)
+>![temp](./img/gas_value.png)
 >
 >When the concentration exceeds a predefined threshold value (4000), the sensor triggers an alert by vibrating the motor.
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/vibmotor.png" alt="result" style="zoom:60%;" />
+><img src="C./img/vibmotor.png" alt="result" style="zoom:60%;" />
 >
 >------
 >
 >**LED adaptive brightness**
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/lightsensor.png" alt="result" style="zoom:60%;" />
+><img src="./img/lightsensor.png" alt="result" style="zoom:60%;" />
 >
 >1. Sensor Activation
 >
@@ -944,15 +944,15 @@ Experiment images and results
 >
 >Based on the light value, the headlight adjusts its brightness. If the light sensor value is lower than 800, the headlight is turned off. If the value exceeds 800, the brightness is adjusted based on the sensor input
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/ledoff.jpg" alt="result" style="zoom:20%;" />
+><img src="./img/ledoff.jpg" alt="result" style="zoom:20%;" />
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/ledon.jpg" alt="result" style="zoom:20%;" />
+><img src="./img/ledon.jpg" alt="result" style="zoom:20%;" />
 >
 >------
 >
 >**Shock detection**
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/impact sensor.png" alt="result" style="zoom:50%;" />
+><img src="./img/impact sensor.png" alt="result" style="zoom:50%;" />
 >
 >1. Shock Detection Trigger
 >
@@ -960,13 +960,13 @@ Experiment images and results
 >
 >2. Shock Alert
 >
->![temp](C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/shock.png)
+>![temp](./img/shock.png)
 >
 >When a shock is detected, the EXTI3 interrupt is triggered, sending a '1' flag via Bluetooth. Upon receiving the '1' on the monitoring pad, it resets the accident-free days, activates the buzzer, and displays the "worker in danger" message.
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/result1.png" alt="result" style="zoom:60%;" />
+><img src="./img/result1.png" alt="result" style="zoom:60%;" />
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/result2.png" alt="result" style="zoom:60%;" />
+><img src="./img/result2.png" alt="result" style="zoom:60%;" />
 >
 >------
 >
@@ -974,9 +974,9 @@ Experiment images and results
 >
 >Using a timer interrupt set for one day, the cnt flag is raised, and the cnt value is displayed on the 7-segment display.
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/day3.png" alt="result" style="zoom:100%;" />
+><img src="./img/day3.png" alt="result" style="zoom:100%;" />
 >
-><img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/day5.png" alt="result" style="zoom:100%;" />
+><img src="./img/day5.png" alt="result" style="zoom:100%;" />
 
 
 
@@ -1118,19 +1118,19 @@ Experiment images and results
 
 ## Appendix
 
-<img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/ap1.png" alt="appendix" style="zoom:70%;" />
+<img src="./img/ap1.png" alt="appendix" style="zoom:70%;" />
 
-<img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/ap2-1.png" alt="appendix" style="zoom:100%;" />
+<img src="./img/ap2-1.png" alt="appendix" style="zoom:100%;" />
 
-<img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/ap2-2.png" alt="appendix" style="zoom:50%;" />
+<img src="./img/ap2-2.png" alt="appendix" style="zoom:50%;" />
 
-<img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/ap4.png" alt="appendix" style="zoom:70%;" />
+<img src="./img/ap4.png" alt="appendix" style="zoom:70%;" />
 
-<img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/ap5.png" alt="appendix" style="zoom:70%;" />
+<img src="./img/ap5.png" alt="appendix" style="zoom:70%;" />
 
-<img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/ap3.png" alt="appendix" style="zoom:70%;" />
+<img src="./img/ap3.png" alt="appendix" style="zoom:70%;" />
 
-<img src="C:/Users/JH/OneDrive/문서/GitHub/2024-2_EmbeddedController/img/catia.png" alt="appendix" style="zoom:70%;" />
+<img src="./img/catia.png" alt="appendix" style="zoom:70%;" />
 
 ### Troubleshooting
 
